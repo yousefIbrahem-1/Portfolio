@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import data from "../data";
+
+const navItems = ["About", "Skills", "Projects", "Experiences", "Education"];
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -11,8 +13,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
-  const firstName = data.name.split(" ")[0];
-  const navItems = ["About", "Skills", "Projects", "Experiences", "Education"];
+  const firstName = useMemo(() => data.name.split(" ")[0], []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,7 +55,7 @@ const Header = () => {
     ? "text-text dark:text-text-dark"
     : "text-white";
 
-  const navItemClass = (isActive) => {
+  const getNavItemClass = (isActive) => {
     if (scrolled) {
       return isActive
         ? "text-primary font-semibold"
@@ -102,9 +103,27 @@ const Header = () => {
                 >
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className={`relative z-10 px-3 py-2 transition-colors duration-300 ${navItemClass(
+                    className={`relative z-10 px-3 py-2 transition-colors duration-300 ${getNavItemClass(
                       isActive
                     )}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById(
+                        item.toLowerCase()
+                      );
+                      if (element) {
+                        const headerOffset = 80;
+                        const elementPosition =
+                          element.getBoundingClientRect().top;
+                        const offsetPosition =
+                          elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                          top: offsetPosition,
+                          behavior: "smooth",
+                        });
+                      }
+                    }}
                   >
                     {item}
                   </a>
@@ -196,7 +215,27 @@ const Header = () => {
                         ? "text-primary font-semibold"
                         : "text-text dark:text-text-dark hover:text-primary"
                     }`}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsMenuOpen(false);
+                      setTimeout(() => {
+                        const element = document.getElementById(
+                          item.toLowerCase()
+                        );
+                        if (element) {
+                          const headerOffset = 80;
+                          const elementPosition =
+                            element.getBoundingClientRect().top;
+                          const offsetPosition =
+                            elementPosition + window.pageYOffset - headerOffset;
+
+                          window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth",
+                          });
+                        }
+                      }, 100);
+                    }}
                   >
                     {item}
                   </a>
