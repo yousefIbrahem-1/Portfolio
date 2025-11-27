@@ -1,191 +1,167 @@
 const data = {
   // Personal Info
-  name: "Kamal Sayed",
-  title: "Full-Stack Developer & AI Engineer",
-  email: "kk1412ec4869@gmail.com",
-  address: "Al-Qalyubia, Khanka, Egypt",
-  phones: ["+20 100 362 0544", "+20 100 582 6130"],
+  name: "Yousef Ibrahem",
+  title: "Software Engineer | .NET Developer",
+  email: "youssefibrahem414@gmail.com",
+  address: "Al-Qalyubia, Egypt",
+  phones: ["+20 1034377464"],
+  
 
   // Professional Summary
   summary: [
-    "Detail-oriented Full-Stack Developer and AI Engineer with a passion for building scalable, efficient web applications. I thrive in collaborative environments and am accustomed to meeting tight deadlines without compromising quality.",
-    "I possess hands-on experience bridging the gap between modern front-end interfaces (React, TailwindCSS) and robust back-end logic (Python, Node.js, MySQL).",
-    "Currently focused on integrating Artificial Intelligence solutions into web architecture to create innovative, data-driven user experiences.",
+  "A dedicated backend developer with a strong foundation in C#, .NET Core, and SQL Server, passionate about building scalable, high-performance",
+    "systems. Experienced in designing RESTful APIs, implementing Clean Architecture, and optimizing database operations for efficiency and maintainability.",
+    "With a problem-solving mindset",
   ],
-
+  // external assets
+  cv:"https://drive.google.com/file/d/10273Oa5m0JDzyb133F8O4FiKJkagDXp5/view?usp=sharing",
   // Social Media
   socialMedia: [
     {
       id: 1,
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/kamal-sayed-82ba2b335/",
+      link: "https://www.linkedin.com/in/yousef-ibrahem1/",
       icon: "FaLinkedin",
     },
     {
       id: 2,
       name: "GitHub",
-      link: "https://github.com/kamalSayed2004",
+      link: "https://github.com/yousefIbrahem-1",
       icon: "FaGithub",
-    },
-    {
-      id: 3,
-      name: "Facebook",
-      link: "https://www.facebook.com/kamalsayedkamal2004/",
-      icon: "FaFacebook",
     },
   ],
   skills: [
     {
-      type: "Front-End",
-      list: [
-        { name: "HTML5", icon: "FaHtml5" },
-        { name: "CSS3", icon: "FaCss3Alt" },
-        { name: "JavaScript (ES6+)", icon: "SiJavascript" },
-        { name: "React.js", icon: "FaReact" },
-        { name: "TailwindCSS", icon: "SiTailwindcss" },
-        { name: "Bootstrap", icon: "FaBootstrap" },
-        { name: "Sass", icon: "FaSass" },
-        { name: "Redux Toolkit", icon: "SiRedux" },
-        { name: "Git", icon: "FaGitAlt" },
-      ],
-    },
-    {
-      type: "Artificial Intelligence",
-      list: [
-        { name: "Machine Learning", icon: "FaBrain" },
-        { name: "Deep Learning", icon: "FaNetworkWired" },
-        { name: "Data Processing", icon: "FaDatabase" },
-        { name: "Supervised Learning", icon: "MdSupervisedUserCircle" },
-        { name: "Unsupervised Learning", icon: "FaRobot" },
-      ],
-    },
-    {
       type: "Back-End",
       list: [
-        { name: "Python", icon: "FaPython" },
-        // { name: "Node.js", icon: "FaNodeJs" },
-        { name: "Django", icon: "SiDjango" },
-        // { name: "Express.js", icon: "SiExpress" },
-        { name: "MySQL", icon: "SiMysql" },
-        // { name: "MongoDB", icon: "SiMongodb" },
-        // { name: "Mongoose", icon: "SiMongoose" },
+        { name: "C#" },
+        { name: "OOP" },
+        { name: "ASP.NET Core" },
+        { name: "Web API" },
+        { name: "MVC" },
+        { name: ".NET Framework" },
+        { name: "SignalR"},
       ],
     },
     {
-      type: "Computer Science",
+      type: "Databases & ORM",
       list: [
-        { name: "Data Structures", icon: "FaLayerGroup" },
-        { name: "Sorting Algorithms", icon: "FaSortAmountDown" },
-        { name: "Searching Algorithms", icon: "FaSearch" },
+        { name: "SQL Server" },
+        { name: "LINQ" },
+        { name: "Entity Framework" },
+        { name: "EF Core" },
+        { name: "ADO.NET"},
+      ],
+    },
+    {
+      type: "Core Concepts",
+      list: [
+        { name: "Problem Solving" },
+        { name: "Data Structures" },
+        { name: "Algorithms" },
+        { name: "SOLID Principles" },
       ],
     },
     {
       type: "Tools",
       list: [
-        { name: "VS Code", icon: "SiVisualstudiocode" },
-        { name: "Postman", icon: "SiPostman" },
-        { name: "Figma", icon: "FaFigma" },
+        { name: "Git" },
+        { name: "GitHub"},
+        { name: "GitHub Actions" },
+        { name: "Azure"},
+      ],
+    },
+    {
+      type: "Programming Languages",
+      list: [
+        { name: "C++"},
+        { name: "C#" },
+        { name: "Python" },
+        { name: "JavaScript" },
+      ],
+    },
+    {
+      type: "Front-End",
+      list: [
+        { name: "HTML5"},
+        { name: "CSS3" },
+        { name: "JavaScript" },
       ],
     },
     {
       type: "Languages",
-      list: [
-        { name: "Arabic", icon: "FaGlobe" },
-        { name: "English", icon: "FaLanguage" },
-      ],
+      list: [{ name: "Arabic" }, { name: "English" }],
     },
     {
       type: "Soft Skills",
       list: [
-        { name: "Collaborative Teamwork", icon: "FaUsers" },
-        { name: "Technical Research", icon: "FaBookReader" },
-        { name: "Leadership", icon: "FaFlag" },
-        { name: "Analytical Problem Solving", icon: "FaPuzzlePiece" },
+        { name: "Teamwork"},
+        { name: "Research" },
+        { name: "Time Management" },
+        { name: "Communication Skills"},
+        { name: "Presentation Skills" },
       ],
     },
   ],
   projects: [
     {
       id: 1,
-      name: "Diamate",
-      category: "AI & Health",
+      name: "Driving & Vehicle License Department ",
+      category: "desktop application",
       description:
-        "A specialized medical application utilizing AI algorithms to assist in the early detection and management of diabetes.",
-      techStack: ["React", "TailwindCSS", "Python", "Machine Learning"],
-      link: "https://github.com/kamalSayed2004/diamate",
+        "Designed and implemented a full DVLD (Driving & Vehicle Licensing Department) management system using C#, .NET, and SQL Server. Built core features including applicant management, driving tests (vision, written, street), local and international license issuance, fee calculation, and violation tracking. Developed an organized multi-tier architecture (Presentation, Business Logic, and Data Access) with ADO.NET, stored procedures, and reusable service components.",
+      techStack: ["C#", ".NET","WINFORMS","SQL Server/ADO.Net", "Multi-Tier Architecture (Presentation, Business, Data Access)"],
+      link: "https://github.com/yousefIbrahem-1/DVLD",
     },
     {
       id: 2,
-      name: "Doctor Appointment System",
-      category: "Full Stack",
+      name: "Multifunctional Robotic Arm Project",
+      category: "robotics",
       description:
-        "A comprehensive booking platform allowing patients to schedule appointments and doctors to manage schedules efficiently.",
-      techStack: ["HTML5", "CSS3", "JavaScript", "React", "TailwindCSS"],
-      link: "https://github.com/kamalSayed2004/medical-project",
+        "Developed a multifunctional robotic arm integrating Arduino, speech-to-text processing, and computer vision to enable advanced human–machine interaction. Implemented modules for sign language translation (speech/text to gestures), Morse code communication, and interactive behaviors including handshakes, waving, and a Rock-Paper-Scissors game. Designed the system to enhance accessibility, real-time communication, and automation through precise motion control and intelligent vision-based responses. Collaborated with a multidisciplinary team to deliver a fully functional, innovative robotic solution.",
+      techStack: ["C++","Python", "Machine Learning", "Embedded Systems (Arduino)", "Computer Vision", "Speech-to-Text (STT) Processing"],
+      link: "https://www.linkedin.com/posts/yousef-ibrahem1_robotics-innovation-technology-activity-7277648617102860288-nr0K?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9UNawBC4ow4-vDQR6JMVmg4FvksSqmBoU",
     },
     {
       id: 3,
-      name: "Timer & Notes Manager",
-      category: "Productivity",
+      name: "Bank Management System",
+      category: "desktop application",
       description:
-        "A personal productivity suite combining task management with customizable timers to enhance workflow efficiency.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      link: "https://github.com/kamalSayed2004/time-manager",
-    },
-    {
-      id: 4,
-      name: "Productivity Dashboard",
-      category: "UI/UX",
-      description:
-        "A responsive dashboard template featuring data visualization widgets and a clean, intuitive user interface.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      link: "https://github.com/kamalSayed2004/dashboard",
-    },
-    {
-      id: 5,
-      name: "Elzero Game Store",
-      category: "E-Commerce",
-      description:
-        "A front-end simulation of a digital game store marketplace focusing on grid layouts and responsive design.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      link: "https://github.com/kamalSayed2004/elzero",
-    },
-    {
-      id: 6,
-      name: "Kasper Template",
-      category: "UI/UX",
-      description:
-        "A pixel-perfect conversion of a design mockup into a responsive web interface.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      link: "https://github.com/kamalSayed2004/kasper",
+        "Built a multi-layered C#/.NET Bank Management System with a clean architecture separating UI, business logic, and data access.Implemented core banking features including customer management, account operations, deposits, withdrawals, transfers, and loan processing, supported by a structured SQL Server database using stored procedures and ADO.NET.Focused on delivering a scalable, maintainable, and secure financial application.",
+      techStack: ["C#", ".NET","WINFORMS","SQL Server/ADO.Net", "Multi-Tier Architecture (Presentation, Business, Data Access)"],
+      link: "https://github.com/yousefIbrahem-1/BMS",
     },
   ],
   experiences: [
     {
-      title: "Machine Learning Trainee",
-      company: "BFCAI",
-      date: "2023",
+      title:
+        "Digital Egypt Pioneers Initiative (DEPI) – Full Stack .NET Web Developer",
+      company: "DEPI",
+      date: "2025",
       description:
-        "Deepening expertise in AI algorithms, data preprocessing, and model training. Successfully completed practical projects involving supervised and unsupervised learning architectures.",
+        "Completed the Digital Egypt Pioneers Program (DEPI) as a Full Stack .NET Web Developer, mastering modern backend and frontend web development using ASP.NET, C#, SQL Server, and advanced web technologies. Demonstrated the ability to build full-stack solutions, integrate APIs, apply clean architecture, and deliver production-ready web applications within a real-world training environment.",
     },
     {
       title: "Freelance Web Developer",
       company: "Self-Employed",
-      date: "2023 - Present",
+      date: "2024 - Present",
       description:
         "Delivering custom web solutions for diverse clients using the MERN stack and TailwindCSS. Focused on performance optimization and responsive design implementation.",
     },
   ],
   certificates: [
     {
-      degree: "Bachelor of Computer Science",
+      degree: "Bachelor of Computer Science and Artificial Intelligence",
       institution: "BFCAI",
       status: "In Progress",
+      link:"",
     },
     {
-      degree: "Machine Learning Certification",
-      institution: "BFCAI",
+      degree:
+        "Digital Egypt Pioneers Initiative (DEPI) – Full Stack .NET Web Developer",
+      institution: "DEPI",
       status: "Completed",
+      link: "https://drive.google.com/file/d/1CQJaE59qTCkEYNRUYc8B5Sd9DxcRTWW3/view?usp=sharing",
     },
   ],
 };

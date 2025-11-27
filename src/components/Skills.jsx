@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import {
   Code,
@@ -15,120 +15,139 @@ import {
 } from "lucide-react";
 import data from "../data";
 
+
+// Dynamic category configuration
+const categoryConfig = {
+  "Front-End": {
+    icon: Code,
+    color: "from-blue-500 to-cyan-500",
+    emoji: "💻",
+    subtitle: "Web Interfaces",
+  },
+  "Back-End": {
+    icon: Database,
+    color: "from-green-500 to-emerald-500",
+    emoji: "⚙️",
+    subtitle: "Server & APIs",
+  },
+  "Programming Languages": {
+    icon: Brain,
+    color: "from-purple-500 to-pink-500",
+    emoji: "🤖",
+    subtitle: "ML & AI",
+  },
+  "Core Concepts": {
+    icon: Briefcase,
+    color: "from-orange-500 to-red-500",
+    emoji: "🎓",
+    subtitle: "Algorithms & DS",
+  },
+  "Databases & ORM": {
+    icon: Database,
+    color: "from-teal-500 to-lime-500",
+    emoji: "🗄️",
+    subtitle: "Data Management",
+  },
+  Tools: {
+    icon: Wrench,
+    color: "from-yellow-500 to-amber-500",
+    emoji: "🛠️",
+    subtitle: "Development Tools",
+  },
+  Languages: {
+    icon: Globe,
+    color: "from-blue-500 to-cyan-500",
+    emoji: "🌐",
+    subtitle: "Global Communication",
+  },
+  "Soft Skills": {
+    icon: Users,
+    color: "from-purple-500 to-pink-500",
+    emoji: "💡",
+    subtitle: "Professional Excellence",
+  },
+};
+
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.4, 0.25, 1],
+    },
+  },
+};
+
+const skillVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 10 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut",
+    },
+  },
+};
+
+const floatingAnimation = {
+  y: [0, -10, 0],
+  transition: {
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
+  },
+};
+
+const glowAnimation = {
+  boxShadow: [
+    "0 0 20px rgba(139, 92, 246, 0.3)",
+    "0 0 40px rgba(139, 92, 246, 0.5)",
+    "0 0 20px rgba(139, 92, 246, 0.3)",
+  ],
+  transition: {
+    duration: 2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  },
+};
+
 const Skills = () => {
   // Separate technical skills from soft skills and languages
-  const technicalSkills = data.skills.filter(
-    (category) =>
-      category.type !== "Languages" && category.type !== "Soft Skills"
+  const technicalSkills = useMemo(
+    () =>
+      data.skills.filter(
+        (category) =>
+          category.type !== "Languages" && category.type !== "Soft Skills"
+      ),
+    []
   );
-  const languagesSkills = data.skills.find((cat) => cat.type === "Languages");
-  const softSkills = data.skills.find((cat) => cat.type === "Soft Skills");
 
-  // Dynamic category configuration
-  const categoryConfig = {
-    "Front-End": {
-      icon: Code,
-      color: "from-blue-500 to-cyan-500",
-      emoji: "💻",
-      subtitle: "Web Interfaces",
-    },
-    "Back-End": {
-      icon: Database,
-      color: "from-green-500 to-emerald-500",
-      emoji: "⚙️",
-      subtitle: "Server & APIs",
-    },
-    "Artificial Intelligence": {
-      icon: Brain,
-      color: "from-purple-500 to-pink-500",
-      emoji: "🤖",
-      subtitle: "ML & AI",
-    },
-    "Computer Science": {
-      icon: Briefcase,
-      color: "from-orange-500 to-red-500",
-      emoji: "🎓",
-      subtitle: "Algorithms & DS",
-    },
-    Tools: {
-      icon: Wrench,
-      color: "from-yellow-500 to-amber-500",
-      emoji: "🛠️",
-      subtitle: "Development Tools",
-    },
-    Languages: {
-      icon: Globe,
-      color: "from-blue-500 to-cyan-500",
-      emoji: "🌐",
-      subtitle: "Global Communication",
-    },
-    "Soft Skills": {
-      icon: Users,
-      color: "from-purple-500 to-pink-500",
-      emoji: "💡",
-      subtitle: "Professional Excellence",
-    },
-  };
+  const languagesSkills = useMemo(
+    () => data.skills.find((cat) => cat.type === "Languages"),
+    []
+  );
 
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50, scale: 0.95 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: [0.25, 0.4, 0.25, 1],
-      },
-    },
-  };
-
-  const skillVariants = {
-    hidden: { opacity: 0, scale: 0.8, y: 10 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const floatingAnimation = {
-    y: [0, -10, 0],
-    transition: {
-      duration: 3,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
-
-  const glowAnimation = {
-    boxShadow: [
-      "0 0 20px rgba(139, 92, 246, 0.3)",
-      "0 0 40px rgba(139, 92, 246, 0.5)",
-      "0 0 20px rgba(139, 92, 246, 0.3)",
-    ],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  };
+  const softSkills = useMemo(
+    () => data.skills.find((cat) => cat.type === "Soft Skills"),
+    []
+  );
 
   return (
     <section

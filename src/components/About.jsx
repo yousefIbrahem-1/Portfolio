@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import data from "../data";
 import portfolioImg from "../assets/imgs/portfolioImg.jpg";
-import cvFile from "../assets/cv.pdf";
 
 const About = () => {
   const containerVariants = {
@@ -215,7 +214,7 @@ const About = () => {
                     View Projects
                   </motion.a>
                   <motion.a
-                    href={cvFile}
+                    href={data.cv}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     target="_blank"
