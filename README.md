@@ -1,3 +1,12 @@
+# 🌐 Personal Portfolio — README.md  
+### by **Yousef Ibrahem**  
+Backend Developer | .NET Developer  
+
+Live Portfolio: **https://yousefibrahem-1.github.io/portfolio**  
+GitHub: **https://github.com/yousefIbrahem-1**  
+LinkedIn: **https://linkedin.com/in/yousef-ibrahem1**
+
+---
 # 🚀 Modern Portfolio Website
 
 A professional, responsive, and visually stunning portfolio website built with **React** and **Tailwind CSS**. Designed to showcase skills, projects, and experiences with a modern aesthetic featuring glassmorphism, dark mode support, and smooth animations.
@@ -17,101 +26,171 @@ A professional, responsive, and visually stunning portfolio website built with *
 
 ---
 
-## 🛠️ Tech Stack
+# 🧑‍💻 About Me  
+A dedicated backend developer with a strong foundation in **C#, .NET Core, and SQL Server**, passionate about building scalable, high-performance systems.
 
-The project utilizes a modern development stack focused on performance and developer experience.
-
-* **Frontend**: [React](https://reactjs.org/), [Vite](https://vitejs.dev/)
-* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-* **Animations**: [Framer Motion](https://www.framer.com/motion/)
-* **Icons**: [Lucide React](https://lucide.dev/)
-* **Data Integration (Implied)**: May showcase back-end expertise via dynamic content/API consumption.
+Experienced in designing RESTful APIs, implementing Clean Architecture, and optimizing database operations. Always exploring new technologies with a strong problem-solving mindset.
 
 ---
 
-## 🚀 Getting Started
+# 🛠️ Tech Stack  
 
-Follow these steps to set up the project locally on your machine.
+### **Backend**
+- C#  
+- ASP.NET Core  
+- Web API  
+- MVC  
+- .NET Framework  
+- SignalR  
 
-### Prerequisites
+### **Databases & ORM**
+- SQL Server  
+- LINQ  
+- Entity Framework / EF Core  
+- ADO.NET  
 
-* Node.js (v16 or higher)
-* npm or yarn
+### **Core Concepts**
+- OOP  
+- SOLID  
+- Data Structures & Algorithms  
+- Problem Solving  
 
-### Installation
+### **Frontend**
+- HTML5  
+- CSS3  
+- JavaScript  
 
-1.  **Clone the repository**
+### **Programming Languages**
+- C++  
+- C#  
+- Python  
+- JavaScript  
 
-    ```bash
-    git clone [https://github.com/yousefIbrahem-1/portfolio.git](https://github.com/yousefIbrahem-1/portfolio.git)
-    cd portfolio
-    ```
+### **Deployment & Cloud**
+- Git  
+- GitHub  
+- GitHub Actions  
+- Azure  
 
-2.  **Install dependencies**
-
-    ```bash
-    npm install
-    ```
-
-3.  **Start the development server**
-
-    ```bash
-    npm run dev
-    ```
-
-4.  **Build for production**
-
-    ```bash
-    npm run build
-    ```
-
----
-
-## 👤 About the Author
-
-**Yousef Ibrahem** - _Software Engineer | [cite_start].NET Developer_ [cite: 4, 5]
-
-[cite_start]I am currently studying at the **Faculty of Computers and Artificial Intelligence** at **Banha University**, expected to graduate in **2026**[cite: 23, 24]. [cite_start]I am a dedicated backend developer with a strong foundation in **C#**, **.NET Core**, and **SQL Server** [cite: 9][cite_start], passionate about building scalable, high-performance systems[cite: 9]. [cite_start]I am experienced in designing **RESTful APIs**, implementing **Clean Architecture**, and optimizing database operations for efficiency and maintainability, with a problem-solving mindset[cite: 9].
-
-### 🌐 Connect with Me
-
-| Platform | Link |
-| :--- | :--- |
-| **LinkedIn** | [cite_start][linkedin.com/in/yousef-ibrahem1](https://www.linkedin.com/in/yousef-ibrahem1/) [cite: 8] |
-| **GitHub** | [cite_start][github.com/yousefIbrahem-1](https://github.com/yousefIbrahem-1) [cite: 7] |
-| **Email** | [cite_start][youssefibrahem414@gmail.com](mailto:youssefibrahem414@gmail.com) [cite: 7] |
-| **Phone** | [cite_start]+201034377464 [cite: 6] |
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yousef-ibrahem1/)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/yousefIbrahem-1)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:youssefibrahem414@gmail.com)
-
-### 💻 Skills & Tools
-
-| Skill Category | [cite_start]Technologies [cite: 9] |
-| :--- | :--- |
-| **Backend** | C#, OOP, ASP.NET Core, Web API, MVC, .NET Framework, SignalR |
-| **Databases & ORM** | SQL Server, LINQ, Entity Framework, EF Core, ADO.NET |
-| **Core Concepts**| Problem Solving, Data Structure, Algorithms, SOLID Principles |
-| **Languages** | C++, C#, Python, JavaScript |
-| **Deployment & Cloud**| Git, GitHub, GitHub Actions, Azure |
-| **Frontend** | HTML5, CSS3, JS |
-
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white) 
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat&logo=dotnet&logoColor=white) 
-![SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white) 
-![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) 
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) 
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white)
-
-### 📊 GitHub Stats
-
-![](https://github-readme-stats.vercel.app/api?username=yousefIbrahem-1&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=yousefIbrahem-1&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=yousefIbrahem-1&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+### **Soft Skills**
+- Teamwork  
+- Research  
+- Time Management  
+- Communication  
+- Presentation  
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=yousefIbrahem-1&icon=0&color=0)](https://visitcount.itsvg.in)
+# 🚀 Featured Projects  
+
+### **📘 Driving & Vehicle License Department (DVLD)**  
+🔗 GitHub: https://github.com/yousefIbrahem-1/DVLD  
+
+Designed and built a complete DVLD management system using **C#, .NET, SQL Server, and multi-tier architecture**.  
+Key features include:  
+- Applicant management  
+- Driving tests (vision, written, street)  
+- Local & international license issuance  
+- Violation tracking  
+- Stored procedures & ADO.NET backend  
+
+---
+
+### **🤖 Multifunctional Robotic Arm Project**  
+(Project showcased on LinkedIn)  
+
+Created an Arduino-powered robotic arm combining **speech-to-text**, **computer vision**, and **gesture translation**.  
+Includes features like:  
+- Sign language interpretation  
+- Morse code communication  
+- Handshake & waving  
+- Rock-Paper-Scissors game  
+- Real-time vision-based control  
+
+---
+
+### **🏦 Bank Management System**  
+🔗 GitHub: https://github.com/yousefIbrahem-1/BMS  
+
+A multi-layer .NET banking system with:  
+- Customer management  
+- Account operations  
+- Deposits, withdrawals, transfers  
+- Loan management  
+- SQL Server + Stored Procedures  
+- Clean UI + Business + Data layer separation  
+
+---
+
+# 🎓 Education  
+
+### **Banha University — Faculty of Computers & Artificial Intelligence**  
+**Class of 2026**  
+Related subjects:  
+AI, Deep Learning, Machine Learning, Robotics, Neural Networks, NLP, VR, Networks  
+
+---
+
+# 📜 Certifications  
+
+### **Digital Egypt Pioneers Initiative (DEPI)** — Full Stack .NET Developer  
+Training included:  
+- Full-stack ASP.NET development  
+- REST APIs  
+- Clean Architecture  
+- Production-ready applications  
+
+### **Database Level 2 – Concepts & T-SQL**  
+Skills gained:  
+- SQL queries  
+- Stored Procedures  
+- Views & Functions  
+- Indexing  
+- Query optimization  
+
+### **C# Programming Level 2**  
+Covered:  
+- OOP  
+- Data structures  
+- Error handling  
+- Scalable Windows applications  
+
+---
+
+# 🌍 Languages  
+- **Arabic:** Native  
+- **English:** Intermediate  
+
+---
+
+# 📦 Installation (For Developers)
+
+```bash
+git clone https://github.com/yousefibrahem-1/portfolio
+cd portfolio
+npm install
+npm run dev
+```
+# 🚀 Deployment
+
+The portfolio is deployed using GitHub Pages.
+
+To redeploy:
+
+```bash
+npm run build
+npm run deploy
+```
+
+# 📬 Contact
+
+📍 Qalyubia, Egypt
+📞 +20 1034377464
+
+📧 youssefibrahem414@gmail.com
+
+🔗 GitHub: https://github.com/yousefIbrahem-1
+
+🔗 LinkedIn: https://linkedin.com/in/yousef-ibrahem1
+
+🔗 Portfolio: https://yousefibrahem-1.github.io/portfolio
