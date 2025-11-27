@@ -193,8 +193,5 @@ npm run deploy
 
 🔗 LinkedIn: https://linkedin.com/in/yousef-ibrahem1
 
-<<<<<<< HEAD
 🔗 Portfolio: https://yousefibrahem-1.github.io/portfolio
-=======
-🔗 Portfolio: https://yousefibrahem-1.github.io/portfolio
->>>>>>> be65ce4b0edccded8a283853247bf014cd5ab6b0
+
